@@ -1,0 +1,31 @@
+1-Git Process ID
+===========
+#sudo lsof -i :8080
+OR
+#sudo netstat -tulnp | grep 8080
+OR
+#sudo ss -tulnp | grep 8080
+==========================
+2-Kill Process 
+==========================
+#sudo kill -9  PID
+
+3- Run Appx
+==========================
+#mvn spring-boot:run
+OR
+#java -jar target/demo1-0.0.1-SNAPSHOT.jar
+
+===========================
+check your code file
+==============
+vim src/main/java/com/example/demo1/Demo1Application.java
+vim src/main/resources/templates/index.html
+
+CSS: src/main/resources/static/css/main.css
+JS: src/main/resources/static/js/main.js
+
+Rebuild & Restart
+=============
+#mvn clean package
+#java -jar target/demo1-0.0.1-SNAPSHOT.jar
